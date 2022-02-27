@@ -8,5 +8,8 @@ module.exports = {
   output: {
     filename: 'main.js', // 出力する際のファイル名を指定
     path: outputPath // 出力先を設定
+  },
+  devServer: { // webpack-dev-serverのドキュメントルートをoutputPathに設定
+    contentBase: outputPath
   }
 }
